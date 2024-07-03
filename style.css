@@ -113,4 +113,5 @@ p {
    left: 50%;
    top: 50%;
    z-index: -50;
+   overflow: hidden;
  }
