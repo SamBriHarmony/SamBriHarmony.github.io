@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bee's site</title>
+ <style>
+          @keyframes swing {
+                    0%, 100% {
+                            transform: rotate(-2deg);
+                    }
+                    50% {
+                            transform: rotate(2deg);
+                    }
+          }
+          @keyframes swing2 {
+                    0%, 100% {
+                            transform: rotate(-0.666deg);
+                    }
+                    50% {
+                            transform: rotate(0.666deg);
+                    }
+          }
+          body {
+                    background: rgb(255, 229, 249);
+          }
+          #bloon {
+                    width: 100px;
+                    height: 100px;
+                    background: rgb(255, 196, 109);
+                    border-radius: 100%;
+                    position: absolute;
+                    inset: 50% 50%;
+                    transform: translate(-50%, -50%);
+                    transform-origin: 50% calc(200px);
+                    animation: swing 4s infinite ease;
+          }
+          #string {
+                    width: 2px;
+                    height: 300px;
+                    background: rgb(59, 59, 59);
+                    border-radius: 100%;
+                    position: absolute;
+                    inset: calc(50% + 100px) calc(50% + 50px);
+                    transform: translate(-50%, -50%);
+                    transform-origin: 50% 300px;
+                    animation: swing2 4s infinite ease;
+          }
+ </style>
+</head>
+<body>
+ <div id="bloon"></div>
+ <div id="string"></div>
+</body>
+</html>
