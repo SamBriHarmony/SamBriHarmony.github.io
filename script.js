@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const container = document.querySelector(".bubble-container");
-  const timeout = 50; //ms
+  const timeout = 80; //ms
 
   let isDragging = false;
   let dragBubble = null;
